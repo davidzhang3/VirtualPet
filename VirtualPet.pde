@@ -1,8 +1,25 @@
-
-void setup(){
-  //some of your code here
-}
-void draw(){
-  //more of your code here
+void setup()
+{
+  size(500,500);
 }
 
+void draw()
+{
+  fill(235, 193, 77);
+  ellipse(350,200,150,150);
+ 
+  fill(219, 133, 42);
+  triangle(500,200,415,175,415,225);
+ 
+  line(415,200,500,200);
+  
+  fill(255,255,255);
+  ellipse(385,175,25,50);
+ 
+  fill(0,0,0);
+  ellipse(390,175,15,20);
+ 
+  fill(235, 193, 77);
+  ellipse(210,319,300,150);
+  
+}
