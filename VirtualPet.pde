@@ -1,21 +1,14 @@
-import processing.serial.*;
-import cc.arduino.*;
-Arduino arduino;
-
 void setup()
 {
   size(500,500);
-  arduino = new Arduino(this, Arduino.list()[0], 57600);
 }
 
 void draw()
 {
   background(116, 207, 219);
-  
-  int y = arduino.analogRead(5);
-  System.out.println(y);
+
   fill(235, 193, 77);
-  triangle(140,275,260,275,200,335-y/2);//wings
+  triangle(140,275,260,275,200,335);//wings
   ellipse(210,300,300,150);//body
   
   fill(235, 193, 77);
@@ -39,7 +32,7 @@ void draw()
   triangle(230,421,230,435,260,435);//legs
   
   fill(235, 193, 77);
-  triangle(150,275,270,275,210,335-y/2);//wings
+  triangle(150,275,270,275,210,335);//wings
   
   fill(255, 224, 69);
   ellipse(500,0,150,150);//sun
